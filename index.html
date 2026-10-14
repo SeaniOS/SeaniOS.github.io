@@ -1,0 +1,343 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Love Yourself — Your Journey to Well-Being</title>
+  <meta name="description" content="Love Yourself is your personal companion for mindful breathing, better sleep, emotional well-being, and a more balanced life.">
+
+  <meta name="theme-color" content="#f8f7f2">
+
+  <style>
+    :root {
+      --background: #f8f7f2;
+      --surface: #ffffff;
+      --text: #253c34;
+      --muted: #68766d;
+      --green: #557b65;
+      --light-green: #e6eee5;
+      --border: #e5e8df;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .container {
+      width: min(1080px, 90%);
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 24px 0;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      font-size: 1.15rem;
+      font-weight: 750;
+      letter-spacing: -0.5px;
+      text-decoration: none;
+    }
+
+    .nav-link {
+      color: var(--muted);
+      font-size: 0.92rem;
+      text-decoration: none;
+    }
+
+    .hero {
+      padding: 100px 0 90px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      padding: 7px 15px;
+      border-radius: 999px;
+      background: var(--light-green);
+      color: var(--green);
+      font-size: 0.82rem;
+      font-weight: 650;
+      letter-spacing: 0.5px;
+    }
+
+    h1 {
+      max-width: 780px;
+      margin: 25px auto 20px;
+      font-size: clamp(2.7rem, 7vw, 5rem);
+      line-height: 1.08;
+      letter-spacing: -3px;
+    }
+
+    h1 span {
+      color: var(--green);
+    }
+
+    .hero p {
+      max-width: 620px;
+      margin: 0 auto;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+
+    .hero-note {
+      margin-top: 28px;
+      color: var(--green);
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    .section {
+      padding: 65px 0;
+    }
+
+    .section-heading {
+      max-width: 650px;
+      margin: 0 auto 40px;
+      text-align: center;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      line-height: 1.2;
+      letter-spacing: -1px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .feature {
+      padding: 27px;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      background: var(--surface);
+    }
+
+    .feature-icon {
+      display: grid;
+      width: 48px;
+      height: 48px;
+      place-items: center;
+      border-radius: 14px;
+      background: var(--light-green);
+      font-size: 1.45rem;
+    }
+
+    h3 {
+      margin: 18px 0 8px;
+      font-size: 1.15rem;
+    }
+
+    .feature p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .philosophy {
+      margin: 55px 0 80px;
+      padding: 60px 30px;
+      border-radius: 28px;
+      background: var(--light-green);
+      text-align: center;
+    }
+
+    .philosophy p {
+      max-width: 650px;
+      margin: 16px auto 0;
+      color: var(--muted);
+    }
+
+    footer {
+      padding: 28px 0;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    @media (max-width: 760px) {
+      .hero {
+        padding: 70px 0;
+      }
+
+      h1 {
+        letter-spacing: -1.8px;
+      }
+
+      .features {
+        grid-template-columns: 1fr;
+      }
+
+      .feature {
+        padding: 23px;
+      }
+
+      .philosophy {
+        margin: 30px 0 55px;
+        padding: 42px 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="container">
+      <a class="brand" href="#">♡ Love Yourself</a>
+      <a class="nav-link" href="#features">Explore the app</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <span class="eyebrow">YOUR PERSONAL WELL-BEING COMPANION</span>
+
+      <h1>
+        A little more calm.<br>
+        A little more <span>you.</span>
+      </h1>
+
+      <p>
+        Life moves quickly. Take a moment to breathe, rest,
+        understand your emotions, and build habits that help
+        you feel more like yourself.
+      </p>
+
+      <div class="hero-note">
+        Heal the past. Live in the present. Build the future.
+      </div>
+    </section>
+
+    <section class="section container" id="features">
+      <div class="section-heading">
+        <h2>Small steps toward a better you</h2>
+        <p>
+          Discover simple tools to care for your mind,
+          improve your daily routine, and make space for yourself.
+        </p>
+      </div>
+
+      <div class="features">
+        <article class="feature">
+          <div class="feature-icon">◉</div>
+          <h3>Mindful Breathing</h3>
+          <p>
+            Slow down and find your balance with guided
+            breathing exercises designed for moments of stress
+            or whenever you need a pause.
+          </p>
+        </article>
+
+        <article class="feature">
+          <div class="feature-icon">☾</div>
+          <h3>Sleep Better</h3>
+          <p>
+            Build a gentler bedtime routine and work toward
+            more consistent sleep with mindful challenges
+            and sleep-focused tools.
+          </p>
+        </article>
+
+        <article class="feature">
+          <div class="feature-icon">♡</div>
+          <h3>Emotional Journal</h3>
+          <p>
+            Make space for your feelings. Capture thoughts
+            and meaningful moments to reflect on your
+            personal journey.
+          </p>
+        </article>
+
+        <article class="feature">
+          <div class="feature-icon">◎</div>
+          <h3>Meditation & Mindfulness</h3>
+          <p>
+            Step away from distractions and reconnect with
+            the present through moments of quiet reflection.
+          </p>
+        </article>
+
+        <article class="feature">
+          <div class="feature-icon">◷</div>
+          <h3>Focus & Goals</h3>
+          <p>
+            Make time for what matters with focused work
+            sessions, personal goals, and manageable daily habits.
+          </p>
+        </article>
+
+        <article class="feature">
+          <div class="feature-icon">✧</div>
+          <h3>Memories & Reflection</h3>
+          <p>
+            Preserve meaningful moments and look back on
+            the experiences that make your journey unique.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="philosophy">
+        <span class="eyebrow">A GENTLER WAY FORWARD</span>
+        <h2>You don't have to change overnight.</h2>
+        <p>
+          Progress isn't about being perfect every day.
+          It's about returning to yourself, one small step
+          at a time. Start where you are. Be kind to yourself
+          along the way.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© 2026 Love Yourself</span>
+      <span>Made with care for your well-being.</span>
+    </div>
+  </footer>
+</body>
+</html>
